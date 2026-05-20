@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+	--color-primary: #ffa62b;
+	--color-heading: #252b42;
+	--color-text: #737373;
+	--color-body: #fafafa;
+}
+@layer base {
+	body {
+		@apply font-montserrat bg-body;
+	}
+}
+
+/* @layer utilities {
+	.p-10 {
+		padding: 40.5px;
+	}
+}
+@layer components {
+	.my-button {
+		@apply bg-green-600 text-white px-5 py-2 rounded-sm cursor-pointer flex items-center justify-center gap-1;
+	}
+}
+
+/* @utility container {
+	margin-inline: auto;
+	padding-inline: 1rem;
+} */
+
+@utility container {
+	margin-inline: auto;
+	padding: 0 1rem;
+}
+
+@theme {
+	--breakpoint-*: initial;
+	--breakpoint-sm: 40rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 67.625rem;
+
+	/* Colors */
+	--color-primary: var(--color-primary);
+	--color-heading: var(--color-heading);
+	--color-text: var(--color-text);
+	--color-body: var(--color-body);
+	/* Fonts */
+	--font-montserrat: "Montserrat", sans-serif;
+	--font-edu: "Edu AU VIC WA NT Guides", cursive;
+
+	--font-display: "Oswald", sans-serif;
+	--font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+	--font-display--font-variation-settings: "opsz" 32;
+}
+
+@layer utilities {
+	.btn-primary {
+		@apply py-2.5 px-9 rounded-full md:border md:border-black text-[20px] text-white cursor-pointer bg-primary hover:bg-white hover:text-primary;
+	}
+	.btn-secondary {
+		@apply py-2.5 px-9 rounded-full border border-white text-[20px] text-white cursor-pointer hover:bg-primary hover:text-white;
+	}
+}
